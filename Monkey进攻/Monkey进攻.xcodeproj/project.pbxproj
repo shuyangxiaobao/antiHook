@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		903BF61520AD619800B11A1D /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 903BF61420AD619800B11A1D /* MDConfig.plist */; };
+		903BF61F20AD619800B11A1D /* libMonkey进攻Dylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 903BF61E20AD619800B11A1D /* libMonkey进攻Dylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		903BF62420AD619800B11A1D /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 903BF62320AD619800B11A1D /* JavaScriptCore.framework */; };
+		903BF62620AD619800B11A1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 903BF62520AD619800B11A1D /* Foundation.framework */; };
+		903BF62820AD619800B11A1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 903BF62720AD619800B11A1D /* UIKit.framework */; };
+		903BF62D20AD619800B11A1D /* Monkey__Dylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 903BF62C20AD619800B11A1D /* Monkey__Dylib.mm */; };
+		903BF63020AD619800B11A1D /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 903BF62F20AD619800B11A1D /* MDConfigManager.h */; };
+		903BF63220AD619800B11A1D /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 903BF63120AD619800B11A1D /* MDConfigManager.m */; };
+		903BF63420AD619800B11A1D /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 903BF63320AD619800B11A1D /* MDCycriptManager.h */; };
+		903BF63620AD619800B11A1D /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 903BF63520AD619800B11A1D /* MDCycriptManager.m */; };
+		903BF63820AD619800B11A1D /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 903BF63720AD619800B11A1D /* MDMethodTrace.h */; };
+		903BF63A20AD619800B11A1D /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 903BF63920AD619800B11A1D /* MDMethodTrace.m */; };
+		903BF63C20AD619800B11A1D /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 903BF63B20AD619800B11A1D /* ANYMethodLog.h */; };
+		903BF63E20AD619800B11A1D /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 903BF63D20AD619800B11A1D /* ANYMethodLog.m */; };
+		903BF64120AD619800B11A1D /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 903BF64020AD619800B11A1D /* LLDBTools.h */; };
+		903BF64320AD619800B11A1D /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 903BF64220AD619800B11A1D /* LLDBTools.mm */; };
+		903BF64820AD619800B11A1D /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 903BF64720AD619800B11A1D /* AntiAntiDebug.m */; };
+		903BF64B20AD619800B11A1D /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 903BF64A20AD619800B11A1D /* fishhook.c */; };
+		903BF64D20AD619800B11A1D /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 903BF64C20AD619800B11A1D /* fishhook.h */; };
+		903BF64F20AD619800B11A1D /* Monkey__Dylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 903BF64E20AD619800B11A1D /* Monkey__Dylib.h */; };
+		903BF65120AD619800B11A1D /* Monkey__Dylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 903BF65020AD619800B11A1D /* Monkey__Dylib.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		903BF62020AD619800B11A1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 903BF60120AD619800B11A1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 903BF61D20AD619800B11A1D;
+			remoteInfo = "Monkey进攻Dylib";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		903BF60920AD619800B11A1D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				903BF61F20AD619800B11A1D /* libMonkey进攻Dylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		903BF60C20AD619800B11A1D /* Monkey进攻.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Monkey进攻.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		903BF60F20AD619800B11A1D /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		903BF61020AD619800B11A1D /* Target.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Target.plist; sourceTree = "<group>"; };
+		903BF61220AD619800B11A1D /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		903BF61420AD619800B11A1D /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MDConfig.plist; path = Config/MDConfig.plist; sourceTree = "<group>"; };
+		903BF61720AD619800B11A1D /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		903BF61820AD619800B11A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		903BF61E20AD619800B11A1D /* libMonkey进攻Dylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libMonkey进攻Dylib.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		903BF62320AD619800B11A1D /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		903BF62520AD619800B11A1D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		903BF62720AD619800B11A1D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		903BF62B20AD619800B11A1D /* Monkey__Dylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; name = Monkey__Dylib.xm; path = Logos/Monkey__Dylib.xm; sourceTree = "<group>"; };
+		903BF62C20AD619800B11A1D /* Monkey__Dylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = Monkey__Dylib.mm; path = Logos/Monkey__Dylib.mm; sourceTree = "<group>"; };
+		903BF62F20AD619800B11A1D /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDConfigManager.h; path = Config/MDConfigManager.h; sourceTree = "<group>"; };
+		903BF63120AD619800B11A1D /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDConfigManager.m; path = Config/MDConfigManager.m; sourceTree = "<group>"; };
+		903BF63320AD619800B11A1D /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDCycriptManager.h; path = Config/MDCycriptManager.h; sourceTree = "<group>"; };
+		903BF63520AD619800B11A1D /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDCycriptManager.m; path = Config/MDCycriptManager.m; sourceTree = "<group>"; };
+		903BF63720AD619800B11A1D /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDMethodTrace.h; path = Config/MDMethodTrace.h; sourceTree = "<group>"; };
+		903BF63920AD619800B11A1D /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDMethodTrace.m; path = Config/MDMethodTrace.m; sourceTree = "<group>"; };
+		903BF63B20AD619800B11A1D /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ANYMethodLog.h; path = Config/ANYMethodLog.h; sourceTree = "<group>"; };
+		903BF63D20AD619800B11A1D /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ANYMethodLog.m; path = Config/ANYMethodLog.m; sourceTree = "<group>"; };
+		903BF64020AD619800B11A1D /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		903BF64220AD619800B11A1D /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		903BF64520AD619800B11A1D /* Monkey进攻Dylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Monkey进攻Dylib-Prefix.pch"; sourceTree = "<group>"; };
+		903BF64720AD619800B11A1D /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		903BF64A20AD619800B11A1D /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		903BF64C20AD619800B11A1D /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		903BF64E20AD619800B11A1D /* Monkey__Dylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Monkey__Dylib.h; sourceTree = "<group>"; };
+		903BF65020AD619800B11A1D /* Monkey__Dylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Monkey__Dylib.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		903BF60620AD619800B11A1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		903BF61B20AD619800B11A1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				903BF62420AD619800B11A1D /* JavaScriptCore.framework in Frameworks */,
+				903BF62820AD619800B11A1D /* UIKit.framework in Frameworks */,
+				903BF62620AD619800B11A1D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		903BF60020AD619800B11A1D = {
+			isa = PBXGroup;
+			children = (
+				903BF60E20AD619800B11A1D /* Monkey进攻 */,
+				903BF62920AD619800B11A1D /* Monkey进攻Dylib */,
+				903BF62220AD619800B11A1D /* Frameworks */,
+				903BF60D20AD619800B11A1D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		903BF60D20AD619800B11A1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				903BF60C20AD619800B11A1D /* Monkey进攻.app */,
+				903BF61E20AD619800B11A1D /* libMonkey进攻Dylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		903BF60E20AD619800B11A1D /* Monkey进攻 */ = {
+			isa = PBXGroup;
+			children = (
+				903BF60F20AD619800B11A1D /* icon.png */,
+				903BF61020AD619800B11A1D /* Target.plist */,
+				903BF61820AD619800B11A1D /* Info.plist */,
+				903BF61120AD619800B11A1D /* Scripts */,
+				903BF61320AD619800B11A1D /* Config */,
+				903BF61620AD619800B11A1D /* TargetApp */,
+			);
+			path = "Monkey进攻";
+			sourceTree = "<group>";
+		};
+		903BF61120AD619800B11A1D /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				903BF61220AD619800B11A1D /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		903BF61320AD619800B11A1D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				903BF61420AD619800B11A1D /* MDConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		903BF61620AD619800B11A1D /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				903BF61720AD619800B11A1D /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		903BF62220AD619800B11A1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				903BF62320AD619800B11A1D /* JavaScriptCore.framework */,
+				903BF62520AD619800B11A1D /* Foundation.framework */,
+				903BF62720AD619800B11A1D /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		903BF62920AD619800B11A1D /* Monkey进攻Dylib */ = {
+			isa = PBXGroup;
+			children = (
+				903BF64E20AD619800B11A1D /* Monkey__Dylib.h */,
+				903BF65020AD619800B11A1D /* Monkey__Dylib.m */,
+				903BF62A20AD619800B11A1D /* Logos */,
+				903BF62E20AD619800B11A1D /* Config */,
+				903BF63F20AD619800B11A1D /* Tools */,
+				903BF64620AD619800B11A1D /* AntiAntiDebug */,
+				903BF64920AD619800B11A1D /* fishhook */,
+				903BF64420AD619800B11A1D /* Supporting Files */,
+			);
+			path = "Monkey进攻Dylib";
+			sourceTree = "<group>";
+		};
+		903BF62A20AD619800B11A1D /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				903BF62B20AD619800B11A1D /* Monkey__Dylib.xm */,
+				903BF62C20AD619800B11A1D /* Monkey__Dylib.mm */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		903BF62E20AD619800B11A1D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				903BF62F20AD619800B11A1D /* MDConfigManager.h */,
+				903BF63120AD619800B11A1D /* MDConfigManager.m */,
+				903BF63320AD619800B11A1D /* MDCycriptManager.h */,
+				903BF63520AD619800B11A1D /* MDCycriptManager.m */,
+				903BF63720AD619800B11A1D /* MDMethodTrace.h */,
+				903BF63920AD619800B11A1D /* MDMethodTrace.m */,
+				903BF63B20AD619800B11A1D /* ANYMethodLog.h */,
+				903BF63D20AD619800B11A1D /* ANYMethodLog.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		903BF63F20AD619800B11A1D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				903BF64020AD619800B11A1D /* LLDBTools.h */,
+				903BF64220AD619800B11A1D /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		903BF64420AD619800B11A1D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				903BF64520AD619800B11A1D /* Monkey进攻Dylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		903BF64620AD619800B11A1D /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				903BF64720AD619800B11A1D /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		903BF64920AD619800B11A1D /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				903BF64A20AD619800B11A1D /* fishhook.c */,
+				903BF64C20AD619800B11A1D /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		903BF61C20AD619800B11A1D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				903BF63420AD619800B11A1D /* MDCycriptManager.h in Headers */,
+				903BF63820AD619800B11A1D /* MDMethodTrace.h in Headers */,
+				903BF64120AD619800B11A1D /* LLDBTools.h in Headers */,
+				903BF63020AD619800B11A1D /* MDConfigManager.h in Headers */,
+				903BF63C20AD619800B11A1D /* ANYMethodLog.h in Headers */,
+				903BF64D20AD619800B11A1D /* fishhook.h in Headers */,
+				903BF64F20AD619800B11A1D /* Monkey__Dylib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		903BF60B20AD619800B11A1D /* Monkey进攻 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 903BF65720AD619800B11A1D /* Build configuration list for PBXNativeTarget "Monkey进攻" */;
+			buildPhases = (
+				903BF60520AD619800B11A1D /* Sources */,
+				903BF60620AD619800B11A1D /* Frameworks */,
+				903BF60720AD619800B11A1D /* ShellScript */,
+				903BF60820AD619800B11A1D /* Resources */,
+				903BF60920AD619800B11A1D /* CopyFiles */,
+				903BF60A20AD619800B11A1D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				903BF62120AD619800B11A1D /* PBXTargetDependency */,
+			);
+			name = "Monkey进攻";
+			productName = "Monkey进攻";
+			productReference = 903BF60C20AD619800B11A1D /* Monkey进攻.app */;
+			productType = "com.apple.product-type.application";
+		};
+		903BF61D20AD619800B11A1D /* Monkey进攻Dylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 903BF65420AD619800B11A1D /* Build configuration list for PBXNativeTarget "Monkey进攻Dylib" */;
+			buildPhases = (
+				903BF61920AD619800B11A1D /* ShellScript */,
+				903BF61A20AD619800B11A1D /* Sources */,
+				903BF61B20AD619800B11A1D /* Frameworks */,
+				903BF61C20AD619800B11A1D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Monkey进攻Dylib";
+			productName = "Monkey进攻Dylib";
+			productReference = 903BF61E20AD619800B11A1D /* libMonkey进攻Dylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		903BF60120AD619800B11A1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "戈强宝";
+				TargetAttributes = {
+					903BF60B20AD619800B11A1D = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					903BF61D20AD619800B11A1D = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 903BF60420AD619800B11A1D /* Build configuration list for PBXProject "Monkey进攻" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 903BF60020AD619800B11A1D;
+			productRefGroup = 903BF60D20AD619800B11A1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				903BF60B20AD619800B11A1D /* Monkey进攻 */,
+				903BF61D20AD619800B11A1D /* Monkey进攻Dylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		903BF60820AD619800B11A1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				903BF61520AD619800B11A1D /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		903BF60720AD619800B11A1D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		903BF60A20AD619800B11A1D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		903BF61920AD619800B11A1D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		903BF60520AD619800B11A1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		903BF61A20AD619800B11A1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				903BF63620AD619800B11A1D /* MDCycriptManager.m in Sources */,
+				903BF63E20AD619800B11A1D /* ANYMethodLog.m in Sources */,
+				903BF63220AD619800B11A1D /* MDConfigManager.m in Sources */,
+				903BF64320AD619800B11A1D /* LLDBTools.mm in Sources */,
+				903BF62D20AD619800B11A1D /* Monkey__Dylib.mm in Sources */,
+				903BF63A20AD619800B11A1D /* MDMethodTrace.m in Sources */,
+				903BF64B20AD619800B11A1D /* fishhook.c in Sources */,
+				903BF64820AD619800B11A1D /* AntiAntiDebug.m in Sources */,
+				903BF65120AD619800B11A1D /* Monkey__Dylib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		903BF62120AD619800B11A1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 903BF61D20AD619800B11A1D /* Monkey进攻Dylib */;
+			targetProxy = 903BF62020AD619800B11A1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		903BF65220AD619800B11A1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		903BF65320AD619800B11A1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		903BF65520AD619800B11A1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MA75X9QV5V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Monkey进攻Dylib/Monkey进攻Dylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libMonkey进攻Dylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"Monkey进攻Dylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		903BF65620AD619800B11A1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = MA75X9QV5V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Monkey进攻Dylib/Monkey进攻Dylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libMonkey进攻Dylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"Monkey进攻Dylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		903BF65820AD619800B11A1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MA75X9QV5V;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Monkey进攻/Info.plist";
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = "-34523523.Monkey--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		903BF65920AD619800B11A1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MA75X9QV5V;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Monkey进攻/Info.plist";
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = "-34523523.Monkey--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		903BF60420AD619800B11A1D /* Build configuration list for PBXProject "Monkey进攻" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				903BF65220AD619800B11A1D /* Debug */,
+				903BF65320AD619800B11A1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		903BF65420AD619800B11A1D /* Build configuration list for PBXNativeTarget "Monkey进攻Dylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				903BF65520AD619800B11A1D /* Debug */,
+				903BF65620AD619800B11A1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		903BF65720AD619800B11A1D /* Build configuration list for PBXNativeTarget "Monkey进攻" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				903BF65820AD619800B11A1D /* Debug */,
+				903BF65920AD619800B11A1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 903BF60120AD619800B11A1D /* Project object */;
+}

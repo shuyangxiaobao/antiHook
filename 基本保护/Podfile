@@ -1,0 +1,5 @@
+project "基本保护.xcodeproj"
+ target "基本保护" do
+#pod 'fishhook'
+
+end
